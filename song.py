@@ -25,12 +25,12 @@ def time_to_seconds(time):
 ## Commands --------
 @bot.on_message(filters.command(['start']))
 async def start(client, message):
-       await message.reply("👋 𝗛𝗲𝗹𝗹𝗼\n\n𝐈 𝐚𝐦 𝐌𝐮𝐬𝐢𝐜 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫[🎶](https://telegra.ph/file/c3c4ebdc70fa7a5510968.jpg)\n\n𝑺𝒆𝒏𝒕 𝒕𝒉𝒆 𝑵𝒂𝒎𝒆 𝒐𝒇 𝒕𝒉𝒆 𝐒𝐨𝐧𝐠 𝒀𝒐𝒖 𝑾𝒂𝒏𝒕... 😍🥰🤗\n\nJust 𝗧𝘆𝗽𝗲 a 𝗦𝗼𝗻𝗴 𝗡𝗮𝗺𝗲\n\n𝐄𝐠. `Believer`",
+       await message.reply("👋 Merhaba\n\nBen Hatıralara Müzik botu[🎶](https://telegra.ph/file/a0c4a5e178ac3bf74050e.jpg)\n\nKomutlarımı kanalımızda bulabilirsiniz... 😍🥰🤗\n\nJust 𝗧𝘆𝗽𝗲 a 𝗦𝗼𝗻𝗴 𝗡𝗮𝗺𝗲\n\n𝐄𝐠. `Believer`",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton('𝗗𝗲𝘃𝗲𝗹𝗼𝗽𝗲𝗿', url='https://t.me/Peterparker6'),
-                    InlineKeyboardButton('𝗗𝗲𝗽𝗹𝗼𝘆', url='https://heroku.com/deploy?template=https://github.com/Avengers105/Music-Bot/tree/main')
+                    InlineKeyboardButton('SAHİBİM', url='https://t.me/MangoSahip'),
+                    InlineKeyboardButton('Kanal', url='https://t.me/kizilsancakbilgi')
                 ]
             ]
         )
@@ -40,7 +40,7 @@ async def start(client, message):
 def a(client, message):
     query=message.text
     print(query)
-    m = message.reply('🔎 𝗦𝗲𝗮𝗿𝗰𝗵𝗶𝗻𝗴 𝘁𝗵𝗲 𝗦𝗼𝗻𝗴...')
+    m = message.reply('🔎 Şarkı Aranıyor...')
     ydl_opts = {"format": "bestaudio[ext=m4a]"}
     try:
         results = []
